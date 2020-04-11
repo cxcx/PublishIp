@@ -7,7 +7,7 @@ def connect_server(ip, port):
         s.connect((ip, port))
     except socket.error as e:
         if e is not None:
-            raise e
+            print(e)
     s.close()
 
 if __name__ == '__main__':
